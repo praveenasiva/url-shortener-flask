@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}shorten URL{% endblock %}
+
+{% block content %}
+<div class="p-9 text-center">
+    <form action="#" , method="post">
+
+        <div class="form-body ">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3>URL Shortener</h3>
+                        <p>Paste your long URL here</p>
+                        <form class="requires-validation" novalidate>
+
+                            <div class="col-md-12">
+                                <input class="form-control" type="url" name="nm" id="url"
+                                    placeholder="https://example.com" required>
+                                <div class="valid-feedback">url field is valid!</div>
+                                <div class="invalid-feedback">url field cannot be blank!</div>
+                            </div>
+                            <div class="form-button mt-3">
+                                <button type="submit" value="submit" class="btn btn-primary">submit</button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<button type="submit" value="submit" class="btn btn-primary">submit</button>
+</form>
+</div>
+{% endblock %}

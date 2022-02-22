@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Short URL{% endblock %}
+
+{% block content %}
+
+
+<div class="form-holder">
+    <div class="form-content">
+        <div class="form-items">
+            <div class="p-9 text-center helo">
+                <h1>https://short-url-flask.herokuapp.com/{{short_url_display}}</h1>
+                <h6>(COPY THIS ABOVE SHORTEN URL) </h6>
+                <!-- <a href="http://127.0.0.1:5000/">BACK TO HOME</a> -->
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- URL-shortener
+This is a simple flask app which takes an URL and shortens it. This shortened verion of the URL redirects to the user to the long URL.
+For each long URL given by the user the application randomly generates an alphabetical combination which redirects to the long URL.
+ -->

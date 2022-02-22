@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}View all URLS{% endblock %}
+
+{% block content %}
+    {% for url in vals %}
+    <div class="p-9 text-center helo">
+    
+        <p><strong>Short:</strong>{{url.short}} <strong>Long:</strong> {{url.long}}</p>
+    </div>
+    {% endfor %}
+{% endblock %}
